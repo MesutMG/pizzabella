@@ -1,2 +1,2 @@
-# pizzabella.github.io
+pizzabella
 Very unofficial page of PizzaBella
