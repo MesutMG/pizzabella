@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 1080px;
+}
+nav{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    list-style-type: none;
+    padding: 0;
+    
+}
+nav a:link, a:visited{
+    text-decoration: none;
+    padding: 0;
+    color:darkslateblue;
+}
+nav a:hover{
+    color: gray;
+}
+header h2{
+    background-image: url("images/classic-pizza2.jpg");
+    height: 75px;
+    background-position: center;
+}
