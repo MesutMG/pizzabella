@@ -1,43 +1,51 @@
+header{
+    max-height: 50px;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 1080px;
 }
-nav{
+#navigator{
+
     text-align: center;
 }
-nav ul li{
+#navigator ul li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 30px;
     list-style-type: none;
     padding: 0;
     
 }
-nav a:link, a:visited{
+#navigator a:link, a:visited{
     text-decoration: none;
     padding: 0;
     color:darkslateblue;
+    transition: font-size 0.3s ease;
+
 }
-nav a:hover{
-    color: gray;
+#navigator a:hover{
+    font-size: 24px;
+    color-scheme: orange;
+
 }
 #mainmenubutton{
     background-image: url("images/classic-pizza2.jpg");
     height: 75px;
     background-position: center;
     color: white;
+    margin-bottom: 0;
     font-size: 400%;
 }
-#headpb {
-    display: flex;
-    align-items: center;
+#mainmenulink{
+    text-decoration: none;
 }
-#headpb img {
-    margin-right: 10px;
-}
+
 #pblogo{
     width: 50px;
     height: auto;
+    margin-left: 10px;
 }
 .h5px{
     max-height: 5px;
@@ -45,7 +53,19 @@ nav a:hover{
 .h15px{
     max-height: 15px;
 }
-#pboutsideimage{
-    width: 300px;
-    height: auto;
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease;
+    animation: reveal 1s forwards;
+    background-image: url("images/slice-background.png");
+
+}
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal{
+    animation-delay: 0.2s; 
 }
