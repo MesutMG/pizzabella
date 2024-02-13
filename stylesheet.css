@@ -1,36 +1,44 @@
 header{
     max-height: 50px;
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 1080px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    animation: reveal 1s forwards;
+    background-image: url("images/slice-background.png");
 }
 #navigator{
-
     text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: gray
 }
-#navigator ul li{
-    display: inline-block;
-    margin: 0 30px;
-    list-style-type: none;
-    padding: 0;
-    
+ul{
+    display: inline-flex;
+    list-style: none;
+
 }
-#navigator a:link, a:visited{
+ul li{
+    margin: 3px;
+    padding-inline: 40px;
+}
+ul li a{
     text-decoration: none;
-    padding: 0;
-    color:darkslateblue;
-    transition: font-size 0.3s ease;
-
+    font-size: 16px;
+    color: white;
+    padding: 10px 10px;
+    transition: 0.4s ease-in-out;
 }
-#navigator a:hover{
-    font-size: 24px;
-    color-scheme: orange;
-
+ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
 }
 #mainmenubutton{
+    border-radius: 20px;
     background-image: url("images/classic-pizza2.jpg");
     height: 75px;
     background-position: center;
@@ -52,14 +60,6 @@ body{
 }
 .h15px{
     max-height: 15px;
-}
-
-body {
-    opacity: 0;
-    transition: opacity 1s ease;
-    animation: reveal 1s forwards;
-    background-image: url("images/slice-background.png");
-
 }
 @keyframes reveal {
     from { opacity: 0; transform: translateY(20px); }
