@@ -1,0 +1,41 @@
+.pizzaimage{
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.menu-item img{
+  width: 150px !important;
+  height: auto !important;
+}
+img{
+    border-radius: 20px;
+}
+div.move {
+    height: 200px;
+    width: 200px;
+    background:#0000FF;
+    color:#FFFFFF;
+    padding:10px;
+  }
+  
+  div.move:hover {
+    transform:translate(200px,100px);
+  }
+  #movev {
+    width: 400px;
+    height: auto;
+    position: fixed;
+    top: 50px;
+    left: 25px;
+    transition: top 0.5s ease;
+  }
+  #moveh{
+    width: 400px;
+    height: auto;
+    position:absolute;
+    top: 400px;
+    left: 0px;
+    transition: left 0.5s ease;
+
+  }
