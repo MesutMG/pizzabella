@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name Form</title>
+</head>
+<body>
+
+<form id="nameForm" onsubmit="checkName(); return false;">
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput" name="name">
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function checkName() {
+  var name = document.getElementById('nameInput').value;
+  if (name.toLowerCase() === 'mustafa') {
+    window.open('menu2.html','_blank'); 
+  } else {
+    window.open('menu.html','_blank'); 
+  }
+}
+</script>
+
+</body>
+</html>

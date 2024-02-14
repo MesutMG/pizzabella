@@ -1,0 +1,26 @@
+div{
+    
+    animation: rotateAnimation 150s ease infinite;
+}
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg); /* Start with no rotation */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate by 360 degrees */
+    }
+  }
+  .pizzaimage{
+    width: 200px;
+    height: auto;
+}
+.menu-item img{
+  width: 150px;
+  height: auto;
+}
+img{
+  animation: rotateAnimation 1s ease infinite;
+}
+#navigator{
+  animation: rotateAnimation 4s ease infinite;
+}
